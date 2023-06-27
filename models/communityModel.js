@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const communitySchema = mongoose.Schema(
+const communitySchema = new mongoose.Schema(
   {
     name: { type: String, require: true },
     admin: { type: String, require: true },
